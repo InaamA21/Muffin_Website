@@ -7,24 +7,45 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f9f9f9;
         }
         header {
-            background-color: #f0f0f0;
+            background-color: #4c68af;
             text-align: center;
-            padding: 20px;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav {
-            width: 200px;
-            padding: 10px;
-            background-color: #d7d3d3;
-            position: fixed;
-            height: 100%;
+            padding: 30px;
+            color: white;
+            font-size: 2.5em;
         }
         main {
-            margin-left: 220px;
+            margin: 40px auto;
             padding: 20px;
+            background-color: #fff;
+            max-width: 800px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        main h1 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        main p {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.6;
+        }
+        main a {
+            display: inline-block;
+            margin: 15px 10px;
+            padding: 10px 20px;
+            background-color: #4c68af;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+        main a:hover {
+            background-color: #4c68af;
         }
     </style>
 </head>
@@ -33,17 +54,13 @@
         Bake a Muffin with Me
     </header>
 
-    <nav>
-        <ul>
-            <li><a href='recipe.html'>Recipe</a></li>
-            <li><a href='steps.html'>Steps</a></li>
-            <li><a href='pictures.html'>Pictures</a></li>
-            <li><a href='price.html'>Price for Ingredients</a></li>
-        </ul>
-    </nav>
-
     <main>
-
+        <h1>Welcome to Muffin Baking!</h1>
+        <p>Explore the pages below to find the recipe, steps, pictures, and price breakdown for our delicious muffins. Let's bake something amazing!</p>
+        <a href="recipe.html">Recipe</a>
+        <a href="steps.html">Steps</a>
+        <a href="pictures.html">Pictures</a>
+        <a href="price.html">Price for Ingredients</a>
     </main>
 </body>
 </html>
