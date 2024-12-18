@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>My Muffin Picture></title>
+    <title>My Muffin Pictures</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,20 +11,37 @@
             background-color: #4c5baf;
             padding: 1cm;
             text-align: center;
+            position: relative;
         }
         header img {
-            width: 70px; 
+            width: 50px; 
             height: auto;
             cursor: pointer;
-            float: left; 
-            margin-right: 0px; 
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
         }
-        h1 {
+        header h1 {
             color: black;
             font-size: 40px;
-            display: inline-block;
+            margin: 0;
         }
-
+        .gallery {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            gap: 15px; 
+            flex-wrap: wrap; 
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 200px; 
+            height: 200px; 
+            object-fit: cover; 
+            border: 2px solid #ccc;
+            border-radius: 8px; 
+        }
     </style>
 </head>
 <body>
@@ -33,11 +50,20 @@
         <a href="muffin.html">
             <img src="cartoon_muffin.png" alt="Home Button">
         </a>
-        <h1>My Muffin Price</h1>
+        <h1>My Muffin Pictures</h1>
     </header>
 
-    <p>These are the pictures i took while baking:</p>
+    <p>These are the pictures I took while baking:</p>
 
+    <div class="gallery">
+        <img src="muffin1.png" alt="Muffin Picture 1">
+        <img src="muffin2.png" alt="Muffin Picture 2">
+        <img src="muffin3.png" alt="Muffin Picture 3">
+        <img src="muffin4.png" alt="Muffin Picture 4">
+        <img src="muffin5.png" alt="Muffin Picture 5">
+        <img src="muffin6.png" alt="Muffin Picture 6">
+        <img src="muffin7.png" alt="Muffin Picture 7">
+    </div>
 
 </body>
 </html>
