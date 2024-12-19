@@ -6,6 +6,9 @@
         body {
             font-family: Arial, sans-serif;
             margin: 15px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background-color: #4c5baf;
@@ -42,6 +45,28 @@
             border: 2px solid #ccc;
             border-radius: 8px; 
         }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+            background-color: #ffffff;
+        }
+        footer a {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 15px 20px;
+            background-color: #4c5baf;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        footer a:hover {
+            background-color: #3b4d88;
+        }
+        footer a:focus {
+            outline: 2px solid #4c5baf;
+        }
     </style>
 </head>
 <body>
@@ -64,6 +89,12 @@
         <img src="muffin6.png" alt="Muffin Picture 6">
         <img src="muffin7.png" alt="Muffin Picture 7">
     </div>
+
+    <footer>
+        <a href="recipe.html">Recipe</a>
+        <a href="steps.html">Steps</a>
+        <a href="price.html">Price for Ingredients</a>
+    </footer>
 
 </body>
 </html>

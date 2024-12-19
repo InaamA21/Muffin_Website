@@ -5,7 +5,10 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 15px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Gesamte Höhe des Bildschirms einbeziehen */
         }
         header {
             background-color: #4c5baf;
@@ -34,6 +37,31 @@
         li {
             margin: 10px 0;
         }
+        main {
+            flex: 1; /* Verhindert, dass der Footer hochrutscht */
+            padding: 15px; /* Abstand zum Inhalt */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        footer a {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 15px 20px;
+            background-color: #4c5baf;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        footer a:hover {
+            background-color: #3b4d88;
+        }
+        footer a:focus {
+            outline: 2px solid #4c5baf;
+        }
     </style>
 </head>
 <body>
@@ -45,18 +73,26 @@
         <h1>My Muffin Recipe</h1>
     </header>
 
-    <h2>Ingredients</h2>
-    <ul>
-        <li>75g soft butter</li>
-        <li>150g sugar</li>
-        <li>1 tsp vanilla extract</li>
-        <li>2 egg whites</li>
-        <li>120 ml buttermilk</li>
-        <li>180g flour</li>
-        <li>3 tsp baking powder</li>
-        <li>30g cocoa powder</li>
-        <li>1 pinch of salt</li>
-    </ul>
+    <main>
+        <h2>Ingredients</h2>
+        <ul>
+            <li>75g soft butter</li>
+            <li>150g sugar</li>
+            <li>1 tsp vanilla extract</li>
+            <li>2 egg whites</li>
+            <li>120 ml buttermilk</li>
+            <li>180g flour</li>
+            <li>3 tsp baking powder</li>
+            <li>30g cocoa powder</li>
+            <li>1 pinch of salt</li>
+        </ul>
+    </main>
+
+    <footer>
+        <a href="pictures.html">Pictures</a>
+        <a href="steps.html">Steps</a>
+        <a href="price.html">Price for Ingredients</a>
+    </footer>
 
 </body>
 </html>

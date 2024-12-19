@@ -5,7 +5,10 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 15px; 
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background-color: #4c5baf;
@@ -35,6 +38,30 @@
         li {
             margin: 10px 0;
         }
+        main {
+            flex: 1; 
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        footer a {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 15px 20px;
+            background-color: #4c5baf;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        footer a:hover {
+            background-color: #3b4d88;
+        }
+        footer a:focus {
+            outline: 2px solid #4c5baf;
+        }
     </style>
 </head>
 <body>
@@ -59,6 +86,12 @@
         <li>Bake for 20–25 minutes. If a toothpick comes out clean, they’re done.</li>
         <li>Cool for 5 minutes, then move to a rack to cool completely.</li>
     </ol>
+
+    <footer>
+        <a href="recipe.html">Recipe</a>
+        <a href="pictures.html">Pictures</a>
+        <a href="price.html">Price for Ingredients</a>
+    </footer>
 
 </body>
 </html>
